@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import MenuDrawer from './components/MenuDrawer';
 import IntakeModal from './components/IntakeModal';
@@ -53,6 +54,7 @@ export default function App() {
       </main>
 
       <Footer onOpenIntake={() => openIntake(null)} />
+      <Analytics />
     </>
   );
 }
